@@ -1,0 +1,15 @@
+@import "tailwindcss";
+
+@font-face {
+    font-family: hanabara;
+    src: url(../assets/fonts/harabara.otf);
+}
+@theme {
+    --font-logo: hanabara, "sans-serif";
+    --background-img: url(../assets/img/background-img.jpg);
+    --color-primary: #063f5c;
+    --color-secondary: #f7ad1a;
+    --color-third: #419ebd;
+    --color-fourth: #9fe7f5;
+}
+
