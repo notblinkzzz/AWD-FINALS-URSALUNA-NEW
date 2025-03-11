@@ -5,164 +5,235 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="./src/output.css" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <title>Langora</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
 </head>
 
-<body class="flex flex-col min-h-screen">
+<body class="flex flex-col h-screen lg:min-h-screen xl:min-h-screen lg:overflow-visible xl:overflow-visible overflow-hidden">
 
-    <!-- Header -->
-    <div class="fixed top-0 left-0 w-full bg-white z-50 flex flex-col gap-5 container px-15 py-4">
-        <header class="grid grid-cols-[1fr_1fr] items-center mx-5">
-            <div class="flex items-center gap-2">
-                <img src="./assets/img/logo-app.png" class="h-10 w-10" alt="">
-                <h1 class="text-3xl font-logo text-primary">Langora</h1>
+    <!-- Header pc/laptop  -->
+    <header class="bg-white header-div-pc-laptop fixed top-0 w-full flex flex-col justify-between xl:px-15 xl:py-5 px-12 py-3">
+        <div class="flex text-md">
+            <div class="flex  items-center w-1/2 gap-2">
+                <img class="xl:h-12 xl:w-12 h-9 w-9" src="./assets/img/logo-app-rmv.png" alt="">
+                <h1 class="xl:text-3xl text-2xl font-bold text-primary font-logo">Langora</h1>
             </div>
-
-
-            <nav class="flex justify-end">
-                <ul class="flex items-center justify-between w-full text-base text-primary font-medium">
-                    <a href=""><li>Home</li></a>
-                    <a href=""><li>Languages</li></a>
-                    <a href=""><li>About Us</li></a>
-                    <button class="bg-white px-11 py-2 rounded-xl border-2 border-black shadow-[3px_3px_0px_0px_#063f5c] active:shadow-none">Start Learning</button>
+            <nav class="flex justify-end w-1/2">
+                <ul class="flex w-full justify-between items-center ">
+                    <a href="">Home</a>
+                    <a href="">Languages</a>
+                    <a href="">About Us</a>
+                    <button class="bg-white xl:px-11 xl:py-2 px-9 py-1 border-2 rounded-xl border-black shadow-[3px_3px_0px_0px_#063f5c] active:shadow-none">
+                        Start Learning
+                    </button>
                 </ul>
             </nav>
-        </header>
-        <div class="w-full h-1 border-b-2 border-primary"></div>
-    </div>
+        </div>
+        <div class="absolute bottom-0 left-0 w-full h-1 border-b-2 border-primary"></div>
+    </header>
 
 
-    <!-- Main -->
-<main class="grid px-20 gap-y-6 bg mt-28">
-    <h1 class="text-5xl font-outline text-center text-primary font-medium ">Welcome to
-        <span class="font-logo">Langora</span>! </h1>
+    <!-- Header tablet/phone DONE -->
+    <header class="header-div-phone-tablet absolute top-0 left-0 w-full flex justify-end p-4 ">
+        <button class="bg-primary text-fourth text-sm px-8 py-2 rounded-full shadow-md md:text-lg md:px-12 md:py-4 ">
+            SIGN IN
+        </button>
+    </header>
 
-    <div class="grid mt-5 grid-cols-[1fr_1fr] items-center">
-        <div class="grid gap-6 max-w-lg">
-            <h1 class="text-5xl font-bold text-yellow-500">Learn Languages the <br>Smart Way!</h1>
-            <h3 class="text-xl text-gray-700">
-                Langora makes language learning fun, fast, and effective. Whether you're a beginner or looking to refine your skills, our interactive lessons, engaging exercises, and real-world practice will help you master a new language with confidence. Join Langora today and start your journey to fluency!
-            </h3>
-            <div class="flex w-full justify-between">
-                <button class="px-16 py-2 bg-primary border-2 border-fourth text-fourth rounded-xl shadow-[-3px_3px_0px_0px_#9fe7f5] text-lg
-                ">Start Learning</button>
-                <button class="px-18 py-2 bg-fourth border-2 border-primary text-primary rounded-xl shadow-[3px_3px_0px_0px_#063f5c] text-lg">Learn More</button>
+    <!-- Main Content tablet/phone -->
+    <main class="lg:hidden xl:hidden w-full max-w-md text-center p-6
+                md:max-w-screen md:p-0 mt-24">
+        <!-- Logo -->
+        <div class="flex items-center justify-center text-center gap-2
+        "> <!--md:bg-red-500-->
+            <img src="./assets/img/logo-app-rmv.png" alt="Langora Logo" class="w-16 md:w-26">
+            <h1 class="text-3xl font-bold text-primary
+                       md:text-6xl"
+                       >Langora</h1>
+        </div>
+
+        <!-- Title -->
+        <h2 class="text-2xl font-semibold mt-4 text-primary
+                   md:text-5xl "
+
+        >Sign up and start learning</h2>
+
+        <!-- Sign-in buttons -->
+        <div class="lg:hidden xl:hidden md:flex md:flex-row-reverse md:justify-evenly md:items-center md:w-full md:rounded-4xl md:gap-8 md:px-6 md:mt-5">
+            <!--SOCIALS SIGN IN BUTTONS #1-->
+            <div class="mt-6 space-y-4 md:w-1/2">
+
+                <button class="flex items-center justify-center w-full bg-[#3B82F6] text-white py-4 rounded-full shadow-md shadow-gray-500">
+                    <i class="fa-brands fa-google mr-3"></i> Sign up with Google
+                </button>
+                <button class="flex items-center justify-center w-full bg-[#475993] text-white py-4 rounded-full shadow-md shadow-gray-500">
+                    <i class="fa-brands fa-facebook mr-3"></i> Sign up with Facebook
+                </button>
+                <button class="flex items-center justify-center w-full bg-black text-white py-4 rounded-full shadow-md shadow-gray-500">
+                    <i class="fa-brands fa-apple mr-3"></i> Sign up with Apple
+                </button>
             </div>
-        </div>
-        <div id="img-bg" class="flex justify-center items-center h-full pl-12">
-            <img src="./assets/img/img-hello.png" alt="Learn" class="w-[480px] h-[480px]">
-        </div>
-    </div>
 
-    <!-- WHY LANGORA -->
-    <div class="grid gap-6 mt-28">
-        <h1 class="text-5xl text-center text-secondary font-medium ">Why choose
-            <span class="font-logo">Langora</span>? </h1>
-        <div class="flex justify-center items-center text-primary text-xl text-center ">
-            <p class="w-1/2">At <span class="font-bold">Langora</span>, we believe that learning a new language should be fun, engaging, and effective. Our platform combines interactive lessons, AI-powered exercises, and real-world practice to help you master a language quickly and confidently.</p>
+            <!--SOCIALS SIGN IN BUTTONS #2-->
+            <p class="hidden text-primary font-semibold md:block md:text-2xl">or</p>
+
+            <!-- Form #3 -->
+            <form class=" md:w-1/2">
+                <p class="text-primary mt-6 md:text-2xl md:font-semibold">Sign up with email</p>
+                <div class="text-left">
+                    <label class="text-primary font-semibold text-sm">Email</label>
+                    <input type="email" class="w-full border-2 border-primary rounded-lg px-5 py-3 focus:outline-none mt-1">
+                </div>
+                <div class="text-left mt-4">
+                    <label class="text-primary font-semibold text-sm">Password</label>
+                    <input type="password" class="w-full border-2 border-primary rounded-lg px-5 py-3 focus:outline-none mt-1">
+                </div>
+                <button class="w-full bg-fourth text-primary font-bold py-4 rounded-full mt-6 shadow-lg
+                md:text-2xl">
+                    Sign up
+                </button>
+            </form>
         </div>
-        <div class=" mt-12 grid grid-cols-4 gap-2 w-full justify-items-center text-center">
-            <p class="bg-fourth px-16 py-8 text-primary font-semibold rounded-xl border-1 border-primary text-xl shadow-[-8px_8px_0px_0px_#063f5c]">Interactive<br>Lessons</p>
-            <p class="bg-fourth px-16 py-8 text-primary font-semibold rounded-xl border-1 border-primary text-xl shadow-[-8px_8px_0px_0px_#063f5c]">Gamified<br>Learning</p>
-            <p class="bg-fourth px-16 py-8 text-primary font-semibold rounded-xl border-1 border-primary text-xl shadow-[8px_8px_0px_0px_#063f5c]">Ai-Powered<br>Practice</p>
-            <p class="bg-fourth px-16 py-8 text-primary font-semibold rounded-xl border-1 border-primary text-xl shadow-[8px_8px_0px_0px_#063f5c]">Anytime,<br>Anywhere</p>
 
-        </div>
-    </div>
+    </main>
 
-    <!-- FEEDBACKS-->
-    <div class="grid gap-11 mt-28 w-full  justify-items-center">
-        <h1 class="text-5xl text-center text-white px-12 py-4 tracking-wider rounded-xl  font-medium bg-primary w-fit shadow-[-8px_8px_0px_0px_#9fe7f5] border-2 border-fourth">Learners
-            <span class="font-logo">Feedback</span></h1>
-        <div class="grid grid-cols-3 w-full p-4 gap-16 justify-items-center">
+        <!-- Main Content desktop/laptop -->
+    <main class="main-desk-lap flex-col grid xl:px-15 xl:py-5 px-9 py-3 w-full xl:mt-32 mt-24 gap-10">
+        <h1 class=" text-center xl:text-6xl text-5xl font-medium text-primary">Welcome to <span>Langora</span>!</h1>
 
-            <div class="w-80 h-fit grid gap-2 p-4 rounded-xl shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)]">
-                <p class="text-primary text-xl">"Langora has completely changed how I learn languages! The interactive lessons and AI feedback help me improve daily, making it easy to track my progress. I love how the app keeps me motivated with challenges and rewards, and the structured lessons make learning feel effortless. It’s fun, engaging, and truly effective!"</p>
-                <p class="text-primary font-semibold text-xl">- Emily</p>
-                <div class=" text-yellow-500 text-xl">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
+        <div class="grid mt-10 grid-cols-[1fr_1fr] items-center mx-16">
+
+
+            <div class="grid gap-6 max-w-2xl ">
+                <h1 class="xl:text-5xl text-4xl font-bold text-secondary">Learn Languages the <br>Smart Way!</h1>
+                <h3 class="xl:text-2xl text-lg text-primary leading-9">
+                     <span class="font-bold">Langora</span> makes language learning fun, fast, and effective. Whether you're a beginner or looking to refine your skills, our interactive lessons, engaging exercises, and real-world practice will help you master a new language with confidence. Join Langora today and start your journey to fluency!
+                </h3>
+                <div class="flex w-full justify-start gap-4">
+                    <button class="xl:px-22 xl:py-3 px-15 py-2 bg-primary border-2 border-fourth rounded-xl shadow-[-3px_3px_0px_0px_var(--color-fourth)] xl:text-lg text-base text-white
+                    ">Start Learning</button>
+                    <button class="xl:px-22 xl:py-3 px-15 py-2 bg-fourth border-2 border-primary rounded-xl shadow-[3px_3px_0px_0px_var(--color-primary)] xl:text-lg text-base text-primary">Learn More</button>
                 </div>
             </div>
 
-            <div class="w-80 h-fit grid gap-2 p-4 rounded-xl shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)]">
-                <p class="text-primary text-xl">"I’ve tried many language apps, but Langora is by far the best. The gamified lessons make learning fun, and the ability to practice with native speakers is a game-changer. I’m finally confident in my French conversations!"</p>
-                <p class="text-primary font-semibold text-xl">- Lebron James</p>
-                <div class=" text-yellow-500 text-xl">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
+            <div id="img-bg" class="flex justify-end items-center h-full ">
+                <img src="./assets/img/img-hello.png" alt="Learn" class="xl:w-[420px] w-[370px] ">
+            </div>
+        </div>
+
+
+        <div class="grid gap-6 mt-32">
+            <h1 class="xl:text-5xl text-4xl text-center text-secondary font-medium ">Why choose
+                <span class="font-logo">Langora</span>? </h1>
+            <div class="flex justify-center items-center text-primary xl:text-3xl text-2xl text-center ">
+                <p class="w-1/2 xl:text-2xl text-xl">At <span class="font-bold">Langora</span>, we believe that learning a new language should be fun, engaging, and effective. Our platform combines interactive lessons, AI-powered exercises, and real-world practice to help you master a language quickly and confidently.</p>
+            </div>
+            <div class="mt-12 grid grid-cols-4 gap-2 w-full justify-items-center text-center">
+                <p class="bg-fourth xl:px-18 xl:py-10 xl:text-xl text-base px-14 py-8 rounded-xl shadow-[-5px_5px_0px_0px_rgba(6,63,92,1)] border-2 border-primary">Interactive<br>Lessons</p>
+                <p class="bg-fourth xl:px-18 xl:py-10 xl:text-xl text-base px-14 py-8 rounded-xl shadow-[-5px_5px_0px_0px_rgba(6,63,92,1)] border-2 border-primary">Gamified<br>Learning</p>
+                <p class="bg-fourth xl:px-18 xl:py-10 xl:text-xl text-base px-14 py-8 rounded-xl shadow-[5px_5px_0px_0px_rgba(6,63,92,1)] border-2 border-primary">Ai-Powered<br>Practice</p>
+                <p class="bg-fourth xl:px-18 xl:py-10 xl:text-xl text-base px-14 py-8 rounded-xl shadow-[5px_5px_0px_0px_rgba(6,63,92,1)] border-2 border-primary">Anytime,<br>Anywhere</p>
+
+            </div>
+        </div>
+
+        <div class="grid gap-11 mt-32 w-full justify-items-center">
+            <h1 class="bg-primary xl:px-20 xl:py-7 xl:text-4xl font-bold text-3xl px-16 py-4 rounded-xl shadow-[-5px_5px_0px_0px_rgba(6,63,92,1)] border-2 border-fourth text-white">Learners
+                <span class="">Feedback</span></h1>
+
+            <div class="grid grid-cols-3 w-full p-4 gap-14 justify-items-center items-start
+            ">
+
+                <div class="grid gap-2 xl:w-64 w-60 text-primary xl:text-xl text-lg shadow-2xl xl:p-6 p-4 rounded-2xl shadow-blue-500/20">
+                    <p class="text-primary xl:text-xl text-lg">"Langora has completely changed how I learn languages! The interactive lessons and AI feedback help me improve daily, making it easy to track my progress. I love how the app keeps me motivated with challenges and rewards, and the structured lessons make learning feel effortless. It’s fun, engaging, and truly effective!"</p>
+                    <p class="text-primary font-semibold xl:text-xl text-base ">- Emily</p>
+                    <div class=" text-yellow-500 xl:text-xl text-base">
+                        <i class="xl:text-xl text-lg fa-solid fa-star"></i>
+                        <i class="xl:text-xl text-lg fa-solid fa-star"></i>
+                        <i class="xl:text-xl text-lg fa-solid fa-star"></i>
+                        <i class="xl:text-xl text-lg fa-solid fa-star"></i>
+                        <i class="xl:text-xl text-lg fa-solid fa-star"></i>
+                    </div>
                 </div>
+
+                <div class="grid gap-1 xl:w-64 w-60 text-primary xl:text-xl text-lg shadow-2xl xl:p-6 p-4 rounded-2xl shadow-blue-500/20">
+                    <p class="text-primary xl:text-xl text-lg ">"I’ve tried many language apps, but Langora is by far the best. The gamified lessons make learning fun, and the ability to practice with native speakers is a game-changer. I’m finally confident in my French conversations!"</p>
+                    <p class="text-primary font-semibold xl:text-xl text-base">- Lebron James</p>
+                    <div class=" text-yellow-500 xl:text-xl text-base">
+                        <i class="xl:text-xl text-lg fa-solid fa-star"></i>
+                        <i class="xl:text-xl text-lg fa-solid fa-star"></i>
+                        <i class="xl:text-xl text-lg fa-solid fa-star"></i>
+                        <i class="xl:text-xl text-lg fa-solid fa-star"></i>
+                        <i class="xl:text-xl text-lg fa-solid fa-star"></i>
+                    </div>
+                </div>
+
+                <div class="grid gap-1 xl:w-64 w-60 text-primary xl:text-xl text-lg shadow-2xl xl:p-6 p-4 rounded-2xl shadow-blue-500/20">
+                    <p class="text-primary xl:text-xl text-lg">"Langora makes learning so easy and flexible! The bite-sized lessons fit into my busy schedule, and the AI-powered pronunciation guide has been super helpful. I’ve made real progress in Japanese, and I love it! It’s the perfect app for anyone serious about learning a language!"</p>
+                    <p class="text-primary font-semibold xl:text-xl text-base ">- Sofia the First</p>
+                    <div class=" text-yellow-500 xl:text-xl text-base">
+                        <i class="xl:text-xl text-lg fa-solid fa-star"></i>
+                        <i class="xl:text-xl text-lg fa-solid fa-star"></i>
+                        <i class="xl:text-xl text-lg fa-solid fa-star"></i>
+                        <i class="xl:text-xl text-lg fa-solid fa-star"></i>
+                        <i class="xl:text-xl text-lg fa-solid fa-star"></i>
+                    </div>
+                </div>
+
             </div>
 
-            <div class="w-80 h-fit grid gap-2 p-4 rounded-xl shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)]">
-                <p class="text-primary text-xl">"Langora makes learning so easy and flexible! The bite-sized lessons fit into my busy schedule, and the AI-powered pronunciation guide has been super helpful. I’ve made real progress in Japanese, and I love it! It’s the perfect app for anyone serious about learning a language!"</p>
-                <p class="text-primary font-semibold text-xl ">- Sofia the First</p>
-                <div class=" text-yellow-500 text-xl">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                </div>
+        </div>
+
+    </main>
+
+
+
+    <footer class="footer-desk-lap w-full border-t-2 border-primary xl:px-15 xl:py-10 px-12 py-8 mt-30">
+        <div class=" w-[40%] text-primary flex flex-col gap-2">
+
+            <div class="flex items-center gap-2">
+                <img class="xl:h-12 xl:w-12 h-9 w-9" src="./assets/img/logo-app-rmv.png" alt="">
+                <h1 class="xl:text-3xl text-2xl font-bold text-primary font-logo">Langora</h1>
             </div>
 
+            <div class="xl:text-2xl text-xl flex gap-3 w-fit pl-1">
+                <a href="" class=""><i class="fa-brands fa-facebook "></i></a>
+                <a href="" class=""><i class="fa-brands fa-instagram "></i></a>
+                <a href="" class=""><i class="fa-solid fa-envelope "></i></a>
+            </div>
+            <div class="xl:text-sm text-xs font-medium pl-1">
+                <p class="text-lg">© 2025 Langora. All rights reserved.</p>
+            </div>
         </div>
 
-    </div>
+        <div class="w-[60%] flex justify-evenly gap-6 pt-3">
+            <div class=" xl:text-lg text-base text-primary flex flex-col gap-2">
+                <h2 class="font-semibold">Terms & Policies</h2>
+                <a href=""><p class="xl:text-base text-sm">Privacy</p></a>
+                <a href=""><p class="xl:text-base text-sm">Terms & Condition</p></a>
+            </div>
 
-</main>
+            <div class=" xl:text-lg text-base text-primary flex flex-col gap-2">
+                <h2 class="font-semibold">Learn With Us</h2>
+                <a href=""><p class="xl:text-base text-sm">Languages Offered</p></a>
+                <a href=""><p class="xl:text-base text-sm">Community Forum</p></a>
+                <a href=""><p class="xl:text-base text-sm">Mobile App</p></a>
+            </div>
 
-
-<footer class="footer-div">
-    <!--Logo-->
-    <div class="grid grid-rows-3 gap-1">
-        <div class="flex items-center gap-2">
-            <img src="./assets/img/logo-app.png" class="h-10 w-10" alt="">
-            <h1 class="text-3xl font-logo text-primary">Langora</h1>
+            <div class=" xl:text-lg text-base text-primary flex flex-col gap-2">
+                <h2 class="font-semibold">Support</h2>
+                <a href=""><p class="xl:text-base text-sm">Help Center</p></a>
+                <a href=""><p class="xl:text-base text-sm">Refund Policy</p></a>
+                <a href=""><p class="xl:text-base text-sm">FAQs</p></a>
+            </div>
         </div>
-        <div class="flex gap-4 w-fit text-2xl text-primary justify-center items-center">
-            <i class="fa-brands fa-facebook"></i>
-            <i class="fa-brands fa-instagram"></i>
-            <i class="fa-solid fa-envelope"></i>
-        </div>
-        <div class="flex items-center gap-1 text-primary text-sm font-medium">
-            <p>© 2025 Langora. All rights reserved.</p>
-        </div>
-    </div>
 
-    <!--Terms and policies-->
-    <div class="footer-navs">
-        <h2 class="">Terms & Policies</h2>
-        <a href=""><p class="">Privacy</p></a>
-        <a href=""><p class="">Terms & Condition</p></a>
-    </div>
-
-    <!--Learn with us-->
-    <div class="footer-navs ">
-        <h2 class="">Learn With Us</h2>
-        <a href=""><p class="">Languages Offered</p></a>
-        <a href=""><p class="">Community Forum</p></a>
-        <a href=""><p class="">Mobile App</p></a>
-    </div>
-
-    <!--Support-->
-    <div class="footer-navs">
-        <h2 class="">Support</h2>
-        <a href=""><p class="">Help Center</p></a>
-        <a href=""><p class="">Refund Policy</p></a>
-        <a href=""><p class="">FAQs</p></a>
-    </div>
-</footer>
+    </footer>
 
 
 
-    <script src="./assets/js/script.js"></script>
 </body>
 </html>
