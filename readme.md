@@ -6,21 +6,21 @@
 <div align="center">
   <a href="https://github.com/zyx-0314/">
   <!-- TODO: If you want to add logo or banner you can add it here -->
-    <img src="./assets/img/nyebe_white.png" alt="Nyebe" width="130" height="100">
+    <img src="./assets/img/logo.png" alt="Langora" width="130" height="130">
   </a>
 <!-- TODO: Change Title to the name of the title of your Project -->
-  <h3 align="center">Title</h3>
+  <h3 align="center">Language Learner: Langora</h3>
 </div>
 <!-- TODO: Make a short description -->
 <div align="center">
-  Short Description. (Optional)
+  Langora is an interactive language learning platform designed to make acquiring new languages enjoyable, efficient, and effective. It offers a variety of features, including interactive lessons, gamified learning experiences, and flexible access, allowing users to learn anytime and anywhere. The platform emphasizes real-world practice and community engagement, enabling learners to practice with native speakers and receive immediate feedback. Testimonials from users highlight the platform's impact on their language learning journeys, noting significant improvements in confidence and conversational skills.
 </div>
 
 <br />
 
 <!-- TODO: Change the zyx-0314 into your github username  -->
 <!-- TODO: Change the WD-Template-Project into the same name of your folder -->
-![](https://visit-counter.vercel.app/counter.png?page=zyx-0314/WD-Template-Project)
+![](https://visit-counter.vercel.app/counter.png?page=zSmojii/AWD-FINALS-URSALUNA)
 
 [![wakatime](https://wakatime.com/badge/user/018dd99a-4985-4f98-8216-6ca6fe2ce0f8/project/63501637-9a31-42f0-960d-4d0ab47977f8.svg)](https://wakatime.com/badge/user/018dd99a-4985-4f98-8216-6ca6fe2ce0f8/project/63501637-9a31-42f0-960d-4d0ab47977f8)
 
@@ -59,20 +59,19 @@
 
 <!-- TODO: To be changed -->
 <!-- The following are just sample -->
-Description of the project in details.
+Langora is an innovative language learning platform designed to make acquiring new languages enjoyable, efficient, and effective. It caters to learners at all levels, from beginners to advanced users seeking to refine their skills.
 
-Guiding Question:
-- What is the project
-- Whats the purpose
-- What are key components
-- What technology used and how it is used
+The primary goal of Langora is to transform the language learning experience by integrating interactive lessons, gamified elements, AI-powered exercises, and real-world practice opportunities. This holistic approach ensures learners can achieve fluency with confidence and at their own pace.
 
 ### Key Components
 <!-- TODO: List of Key Components -->
 <!-- The following are just sample -->
-- MultiPage Website/Single Page Website
-- Parallax transition
-- Transactional
+- Interactive Lessons: Engaging and immersive lessons that adapt to the learner's proficiency level, promoting active participation and retention.
+- Gamified Learning: Incorporation of game-like elements to make learning fun and motivating, encouraging consistent progress.
+- Anytime, Anywhere Access: A flexible platform accessible across devices, allowing learners to study at their convenience.
+
+### Deployment Link
+https://feu-tech-advance-web-design-ramirez.github.io/AWD-FINALS-URSALUNA/
 
 ### Technology
 <!-- TODO: List of Technology Used -->
@@ -119,4 +118,6 @@ WD-ProjectName
 <!-- TODO: Add References -->
 | Title | Purpose | Link |
 |-|-|-|
-| Sample Title | Sample purpose would be here like this and this is the example of what it is. | trykolang.com |
+| Tail Wind | So that we can have an easier time customizing our Website using the utility classesfrom Tail Wind | https://tailwindcss.com/ |
+| Font Awesome | For some of our icons on  our Website | https://fontawesome.com/icons |
+
