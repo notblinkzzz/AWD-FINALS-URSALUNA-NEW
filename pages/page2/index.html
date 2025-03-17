@@ -11,124 +11,190 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <title>About Us</title>
 </head>
-<body>
+<body class="flex flex-col h-screen lg:min-h-screen xl:min-h-screen lg:overflow-visible xl:overflow-visible">
 
-    <!-- Mobile Container -->
-    <div class="w-[425px] mx-auto bg-white shadow-lg rounded-lg overflow-hidden">
+    <!-- Header pc/laptop  -->
+    <header class="bg-white header-div-pc-laptop fixed top-0 w-full flex flex-col justify-between xl:px-15 xl:py-5 lg:px-12 lg:py-3 px-10 py-3 xl:gap-0 lg:gap-0 md:gap-4 gap-3 text-primary">
 
-
-
-    <!-- Navigation Bar -->
-    <nav class="fixed flex flex-col items-center h-27 justify-between py-6 border-b-2 border-primary bg-white w-[425px] z-999">
-        <!-- Logo -->
-        <div class="flex items-center space-x-2 ml-2 mb-2 w-100 pl-1">
-            <img src="./assets/img/logo-app-removebg-preview.png" alt="Langora" class="w-14 h-12">
-            <span class="text-primary text-2xl font-bold font-logo">Langora</span>
-        </div>
-
-        <!-- Navigation Links -->
-        <div class="flex w-full space-x-10 px-6 text-lg text-primary justify-end items-center pr-12">
-            <a href="#" class="relative border-b-2 border-blue-900  text-sm">Home</a>
-            <a href="#" class="hover:border-b-2 hover:border-primary transition duration-200 text-sm">Learn</a>
-            <a href="#" class="hover:border-b-2 hover:border-primary transition duration-200 text-sm">Practice</a>
-        </div>
-    </nav>
-
-        <div class="flex">
-            <!-- Sidebar -->
-            <div class="fixed w-25 h-full border-r-2 flex flex-col border-primary items-center space-y-6 justify-center bg-white">
-                <div class="streak-language flex justify-center items-center gap-8 px-4 mb-11 mt-1">
-                <div class="streak-section flex gap-2">
-                    <img class="h-[1.5rem] w-[1.5rem]" src="./assets/img/flame.png">
-                    <p class="">7</p>
-                </div>
-
-                <img class="h-[1.5rem] w-[1.5rem]" src="./assets/img/china.png">
+        <div class="flex text-md">
+            <div class="flex  items-center w-1/2 gap-2">
+                <img class="xl:h-12 xl:w-12 lg:h-11 lg:w-11 md:h-10 md:w-10 h-9 w-9 " src="./assets/img/logo-app-rmv.png" alt="">
+                <h1 class="xl:text-2xl text-xl font-bold">Langora</h1>
             </div>
 
-                <div class="text-center">
-                    <div class="w-14 h-14 flex items-center justify-center rounded-full bg-primary">
-                    <i class="fa-solid fa-user text-2xl" style="color: #ffffff;"></i>
-                </div>
-                    <p class="text-xs font-bold mt-1 text-third">PROFILE</p>
-                </div>
-                <div class="flex flex-col items-center">
-                    <div class="w-14 h-14 flex items-center justify-center rounded-full bg-primary">
-                    <i class="fa-solid fa-scroll text-2xl" style= "color: #ffffff;"></i>
-                </div>
-                    <p class="text-xs font-bold mt-1 text-third">CHALLENGES</p>
-                </div>
-                <div class="text-center">
-                    <div class="w-14 h-14 flex items-center justify-center rounded-full bg-primary">
-                    <i class="fa-solid fa-bag-shopping text-2xl" style="color: #ffffff;"></i>
-                </div>
-                    <p class="text-xs font-bold mt-1 text-third">SHOP</p>
-                </div>
-                <div class="text-center">
-                    <div class="w-14 h-14 flex items-center justify-center rounded-full bg-primary">
-                    <i class="fa-solid fa-circle-info text-2xl" style="color: #ffffff;"></i>
-                </div>
-                    <p class="text-xs font-bold mt-1 text-third">ABOUT</p>
-                </div>
-            </div>
-
-            <!-- Main Content -->
-            <div class="flex flex-col p-6 bg-gren-300 pl-30 pt-30">
-                <h2 class="text-2xl font-bold text-secondary flex pt-10 bg-bue-400">Our Mission</h2>
-                <p class="text-gray-600 mt-2 text-justify text-xs bg-purle-200">
-                    At <span class="font-bold">Langora</span>, we believe that learning a new language should be engaging, accessible, and effective. Our mission is to help people around the world break language barriers and communicate with confidence—whether for travel, career growth, or personal enrichment.
-                </p>
-
-                <h2 class="text-xl font-bold text-secondary mt-6 bg-lue-400">Our Values</h2>
-                <ul class="mt-2 space-y-2 text-primary text-xs">
-                    <li><span class="font-bold">Inclusivity</span> - We believe everyone should have access to language learning, no matter their background.</li>
-                    <li><span class="font-bold">Innovation</span> - We use AI-driven technology to make learning smarter and more effective.</li>
-                    <li><span class="font-bold">Engagement</span> - Learning should be fun, rewarding, and tailored to individual needs.</li>
+            <nav class="flex xl:justify-end lg:justify-end  w-1/2">
+                <ul class="flex w-full xl:justify-between xl:items-center lg:justify-between lg:items-center justify-end ">
+                    <a class="xl:block lg:block hidden hover:text-fourth" href="../../index.html">Home</a>
+                    <a class="xl:block lg:block hidden" href="">Languages</a>
+                    <a class="xl:block lg:block hidden" href="">About Us</a>
+                    <button class="bg-white xl:px-11 xl:py-2 lg:px-9 lg:py-1 md:px-6 py-1 px-4 border-2 rounded-xl border-primary shadow-[3px_3px_0px_0px_#063f5c] active:shadow-none ">
+                        Start Learning
+                    </button>
                 </ul>
+            </nav>
+        </div>
+
+        <div class="absolute bottom-0 left-0 w-full h-1 border-b-2 border-primary"></div>
+
+        <nav class="xl:hidden lg:hidden">
+            <ul class="flex w-full justify-evenly items-center text-primary ">
+                <a class="hover:text-fourth" href="../../index.html">Home</a>
+                <a href="">Languages</a>
+                <a href="">About Us</a>
+            </ul>
+        </nav>
+    </header>
+
+        <!-- Main Content desktop/laptop -->
+    <main class="main-desk-lap flex-col grid xl:px-15 xl:py-5 px-9 py-3 w-full xl:mt-32 lg:mt-24 mt-30 xl:gap-10 lg:gap-10 ">
+
+            <div class=" grid mt-10 xl:grid-cols-[1fr_1fr] lg:grid-cols-[1fr_1fr] md:grid-cols-[1fr_1fr] items-center xl:mx-16 lg:mx-8 gap-10">
+            <div class="grid xl:gap-6 lg:gap-6 md:gap-6 gap-3 max-w-2xl">
+                <h1 class="xl:text-5xl lg:text-4xl md:text-2xl text-xl font-bold text-secondary">Our Mission</h1>
+                <h3 class="xl:text-2xl lg:text-lg md:text-base text-sm text-primary xl:leading-9 lg:leading-8">
+                      At <span class="font-bold">Langora</span> we believe that learning a new language should be engaging, accessible, and effective. Our mission is to help people around the world break language barriers and communicate with confidence—whether for travel, career growth, or personal enrichment.
+                </h3>
+
+            </div>
+
+            <div class="grid xl:gap-6 lg:gap-6 md:gap-6 gap-3 max-w-2xl">
+                <h1 class="xl:text-5xl lg:text-4xl md:text-2xl text-xl font-bold text-secondary">Our Values</h1>
+                <h3 class="xl:text-2xl lg:text-lg md:text-base text-sm text-primary xl:leading-9 lg:leading-8">
+                        <li><strong class="text-primary">Inclusivity</strong> - We believe everyone should have access to language learning, no matter their background.</li>
+                        <li><strong class="text-primary">Innovation</strong> - We use AI-driven technology to make learning smarter and more effective.</li>
+                        <li><strong class="text-primary">Engagement</strong> - Learning should be fun, rewarding, and tailored to individual needs.</li>
+                    </ul>
+                </h3>
+
+            </div>
+
+
+        </div>
+
+        <div class="grid gap-6 xl:mt-32 lg:mt-32 mt-25 mb-40">
+            <h1 class="xl:text-5xl lg:text-4xl md:text-2xl text-xl text-center text-secondary font-medium "> Meet the Team </h1>
+
+            <div class=" xl:mt-5 lg:mt-5 md:mt-2 grid grid-cols-2 xl:gap-2 lg:gap-2 md:gap-7 gap-x-7 gap-y-5 w-full justify-items-center text-center md:grid-cols-4 lg:grid-cols-4 xl:grid-cols-4">
+                    <div class="flex flex-col gap-10">
+                        <p class="xl:text-2xl lg:text-xl md:text-lg text-md text-primary font-medium">Leader/Developer</p>
+                        <img src="./assets/img/jamie.jpg" class="xl:w-[250px] lg:w-[200px] md:w-[150px] w-[150px] shadow-[-8px_8px_0px_0px_var(--color-third)]">
+                    </div>
+                    <div class="flex flex-col gap-10">
+                        <p class="xl:text-2xl lg:text-xl md:text-lg text-md text-primary font-medium">Developer</p>
+                        <img src="./assets/img/stephen.jpeg" class="xl:w-[250px] lg:w-[200px] md:w-[150px] w-[150px] shadow-[-8px_8px_0px_0px_var(--color-third)]">
+                    </div>
+                    <div class="flex flex-col gap-10">
+                        <p class="xl:text-2xl lg:text-xl md:text-lg text-md text-primary font-medium">Designer</p>
+                        <img src="./assets/img/brendan.jpg" class="xl:w-[250px] lg:w-[200px] md:w-[150px] w-[150px] shadow-[-8px_8px_0px_0px_var(--color-third)]">
+                    </div>
+                    <div class="flex flex-col gap-10">
+                        <p class="xl:text-2xl lg:text-xl md:text-lg text-md text-primary font-medium">Documenter/QA</p>
+                        <img src="./assets/img/jom.png" class="xl:w-[250px] lg:w-[200px] md:w-[150px] w-[150px] shadow-[-8px_8px_0px_0px_var(--color-third)]">
+                    </div>
+
+
             </div>
 
         </div>
-                    <!-- Meet the Team Section -->
-                    <section class="flex flex-col mt-8 text-center pl-30 pt-10 gap-7">
-                        <h2 class="text-3xl font-bold text-secondary">Meet the Team</h2>
-        
-                        <!-- Leader/Dev -->
-                        <div class="mt-6">
-                            <h3 class="text-xl font-bold text-primary">Leader/Developer</h3>
-                            <div class="mt-4 mx-auto w-40 h-40 bg-primary rounded-sm flex items-center justify-center shadow-[-8px_8px_0px_0px_rgba(159,231,245)]">
-                                <img src="./assets/img/jamie.jpg" alt="">
-                            </div>
-                        </div>
-        
-                        <!-- Developer -->
-                        <div class="mt-6">
-                            <h3 class="text-xl font-bold text-text-primary">Developer</h3>
-                            <div class="mt-4 mx-auto w-40 h-40 bg-primary rounded-sm flex items-center justify-center shadow-[-8px_8px_0px_0px_rgba(159,231,245)]">
-                                <img src="./assets/img/stephen.jpeg" alt="">
-                            </div>
-                        </div>
-        
-                        <!-- Designer -->
-                        <div class="mt-6">
-                            <h3 class="text-xl font-bold text-text-primary">Designer</h3>
-                            <div class="mt-4 mx-auto w-40 h-40 bg-primary rounded-sm flex items-center justify-center shadow-[-8px_8px_0px_0px_rgba(159,231,245)]">
-                                <img src="./assets/img/brendan.jpg" alt="">
-                            </div>
-                        </div>
-        
-                        <!-- Developer -->
-                        <div class="mt-6">
-                            <h3 class="text-xl font-bold text-text-primary">Docs/QA</h3>
-                            <div class="mt-4 mx-auto w-40 h-40 bg-primary rounded-sm flex items-center justify-center shadow-[-8px_8px_0px_0px_rgba(159,231,245)]">
-                                <img src="./assets/img/jom.png" alt="">
-                            </div>
-                        </div>
-                    </section>
 
-                    <div class="pb-10">
+        <section class="">
+            <!-- Title and Text -->
+            <div class="text-left xl:flex xl:flex-row xl:items-center xl:gap-10 lg:flex lg:flex-row lg:items-center lg:gap-8 md:flex md:flex-row md:items-center md:gap-4 w-full mb-25">
+                <h2 class="font-bold text-secondary xl:w-[300px] lg:w-[200px] md:w-[230px] w-[140px] xl:text-6xl lg:text-4xl md:text-4xl text-3xl xl:text-center lg:text-center md:text-center xl:ml-30 lg:ml-15">Our Story</h2>
+                <p class="mt-4 text-gray-700 xl:w-[900px] lg:w-[570px] md:w-[450px] w-[350px] xl:text-2xl lg:text-xl md:text-lg text-md ">
+                    <span class="font-bold text-primary">Langora</span> was created by a team of college students who wanted to make language learning more fun and interactive. We saw the struggle of traditional methods dull textbooks, rigid lessons and decided to change the game with AI-powered learning, real-world practice, and a gamified experience.
+                </p>
+            </div>
 
-                    </div>
-    </div>
+            <!-- Call to Action -->
+             <div class="flex flex-col place-items-center gap-4">
+                 <h2 class="font-bold text-primary xl:hidden lg:hidden md:hidden block xl:w-[500px] lg:w-[400px] md:w-[400px] w-fit xl:text-5xl lg:text-4xl md:text-3xl text-3xl xl:text-center lg:text-center md:text-center">Join the Community!</h2>
+                      <div class="relative flex flex-col place-items-center text-left xl:flex xl:flex-row xl:items-center xl:gap-10 lg:flex lg:flex-row lg:items-center lg:gap-8 md:flex md:flex-row md:items-center md:gap-4 w-full xl:pb-10">
+                          <!-- Info Box -->
+                          <div class="bg-fourth border-1 border-primary p-4 rounded-lg shadow-md xl:w-[800px] lg:w-[500px] md:w-[500px] w-[300px] xl:ml-5 lg:ml-15">
+                              <p class="text-gray-700 text-center xl:text-lg lg:text-md md:text-xs text-xs">
+                                  Whether you're a beginner or aiming for fluency, <span class="font-bold text-primary">Langora</span> makes the journey smooth and enjoyable. 
+                                  <span class="font-bold text-primary">Join thousands of learners worldwide</span> and take your first step toward mastering a new language today!
+                              </p>
+                          </div>
+                          <h2 class="font-bold text-primary xl:block lg:block md:block hidden xl:w-[500px] lg:w-[400px] md:w-[400px] w-[400px] text-center xl:text-5xl lg:text-4xl md:text-3xl text-3xl xl:text-center lg:text-center md:text-center">Join the Community!</h2>
+     
+                          <div class="absolute t-0 place-items-center xl:left-185 xl:bottom-4 lg:left-121 lg:bottom-[-25px] md:left-81 md:bottom-[-27px] left-66 bottom-[-20px]">
+                              <button class="flex items-center xl:py-2 xl:px-5 lg:py-1 lg:px-3.5 md:py-1 md:px-3 py-1.5 px-3 space-x-2 shadow-[-5px_5px_0px_0px_var(--color-third)] bg-primary text-third font-semibold rounded-full">
+                                  <span class="text-secondary">👉</span>
+                                  <span class="xl:text-sm lg:text-xs md:text-xs text-xs">JOIN</span>
+                              </button>
+                          </div>
+                      </div>
+             </div>
+
+        </section>
+
+            </div>
+
+        </div>
+
+    </main>
+
+    <!-- footer  -->
+    <footer class="footer-desk-lap  w-full border-t-2 border-primary xl:px-15 xl:py-12 lg:px-12 lg:py-10  px-10 py-8 mt-30 xl:flex-row lg:flex-row md:flex-row flex-col">
+        <div class=" xl:w-[40%] lg:w-[40%] md:w-[40%] w-full text-primary flex xl:flex-col lg:flex-col md:flex-col gap-2  ">
+
+            <div class="flex items-center gap-2">
+                <img class="xl:h-12 xl:w-12 h-9 w-9" src="./assets/img/logo-app-rmv.png" alt="">
+                <h1 class="xl:text-2xl text-2xl font-bold">Langora</h1>
+            </div>
+
+
+
+            <!--hidden type shit-->
+            <div class="xl:hidden lg:hidden md:hidden flex  flex-col pl-16 gap-1">
+                <div class="flex text-xl gap-3 w-fit">
+                    <a href="" class=""><i class="fa-brands fa-facebook "></i></a>
+                    <a href="" class=""><i class="fa-brands fa-instagram "></i></a>
+                    <a href="" class=""><i class="fa-solid fa-envelope "></i></a>
+                </div>
+                <div class=" text-sm font-medium">
+                    <p class="">All rights reserved.</p>
+                </div>
+            </div>
+
+
+
+            <div class="xl:block lg:block md:block hidden xl:text-3xl lg:text-2xl text-xl gap-3 w-fit pl-1">
+                <a href="" class=""><i class="fa-brands fa-facebook "></i></a>
+                <a href="" class=""><i class="fa-brands fa-instagram "></i></a>
+                <a href="" class=""><i class="fa-solid fa-envelope "></i></a>
+            </div>
+            <div class="xl:block lg:block md:block hidden  xl:text-sm text-xs font-medium pl-1">
+                <p class="xl:text-lg lg:text-lg md:text-sm ">© 2025 Langora. All rights reserved.</p>
+            </div>
+        </div>
+
+        <div class="xl:w-[60%] lg:w-[60%] md:w-[60%] w-full xl:mt-0 lg:mt-0 md:mt-0 mt-10 flex justify-evenly gap-6 pt-3 ">
+            <div class=" xl:text-lg lg:text-base md:text-sm text-primary flex flex-col gap-2">
+                <h2 class="font-semibold">Terms & Policies</h2>
+                <a href=""><p class="xl:text-base text-sm">Privacy</p></a>
+                <a href=""><p class="xl:text-base text-sm">Terms & Condition</p></a>
+            </div>
+
+            <div class=" xl:text-lg lg:text-base md:text-sm text-primary flex flex-col gap-2">
+                <h2 class="font-semibold">Learn With Us</h2>
+                <a href=""><p class="xl:text-base text-sm">Languages Offered</p></a>
+                <a href=""><p class="xl:text-base text-sm">Community Forum</p></a>
+                <a href=""><p class="xl:text-base text-sm">Mobile App</p></a>
+            </div>
+
+            <div class=" xl:text-lg lg:text-base md:text-sm text-primary flex flex-col gap-2">
+                <h2 class="font-semibold">Support</h2>
+                <a href=""><p class="xl:text-base text-sm">Help Center</p></a>
+                <a href=""><p class="xl:text-base text-sm">Refund Policy</p></a>
+                <a href=""><p class="xl:text-base text-sm">FAQs</p></a>
+            </div>
+        </div>
+
+    </footer>
+
 
 
 </body>
