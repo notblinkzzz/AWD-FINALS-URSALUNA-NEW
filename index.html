@@ -25,9 +25,23 @@
 
             <nav class="flex xl:justify-end lg:justify-end  w-1/2">
                 <ul class="flex w-full xl:justify-between xl:items-center lg:justify-between lg:items-center justify-end ">
-                    <a class="xl:block lg:block hidden hover:text-fourth" href="">Home</a>
-                    <a class="xl:block lg:block hidden hover:text-fourth" href="">Languages</a>
-                    <a class="xl:block lg:block hidden hover:text-fourth" href="./pages/page2/index.html">About Us</a>
+                    <a class="xl:block lg:block hidden hover:text-third transition duration-200" href="">Home</a>
+                    <div class="relative group">
+                        <a href="#" class="xl:block lg:block hidden border-b-2 border-transparent hover:text-third transition duration-200">Languages<i class="fa-solid fa-caret-down ml-2"></i></a>
+                        <!-- Dropdown Menu -->
+                        <div class="absolute z-10 overflow-y-auto bg-white left-[-60px] mt-1 w-48 h-48 shadow-md rounded-md opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300">
+                            <a href="#" class="block px-4 py-2 hover:bg-gray-100">Spanish</a>
+                            <a href="#" class="block px-4 py-2 hover:bg-gray-100">French</a>
+                            <a href="#" class="block px-4 py-2 hover:bg-gray-100">German</a>
+                            <a href="#" class="block px-4 py-2 hover:bg-gray-100">Japanese</a>
+                            <a href="#" class="block px-4 py-2 hover:bg-gray-100">Mandarin</a>
+                            <a href="#" class="block px-4 py-2 hover:bg-gray-100">Korean</a>
+                            <a href="#" class="block px-4 py-2 hover:bg-gray-100">English</a>
+                            <a href="#" class="block px-4 py-2 hover:bg-gray-100">Tagalog</a>
+                            <a href="#" class="block px-4 py-2 hover:bg-gray-100">Portugese</a>
+                        </div>
+                    </div>
+                    <a class="xl:block lg:block hidden hover:text-third transition duration-200" href="./pages/page2/index.html">About Us</a>
                     <button class="bg-white xl:px-11 xl:py-2 lg:px-9 lg:py-1 md:px-6 py-1 px-4 border-2 rounded-xl border-primary shadow-[3px_3px_0px_0px_#063f5c] active:shadow-none ">
                         Start Learning
                     </button>
@@ -40,7 +54,16 @@
         <nav class="xl:hidden lg:hidden">
             <ul class="flex w-full justify-evenly items-center text-primary ">
                 <a class="hover:text-fourth" href="">Home</a>
-                <a class="hover:text-fourth" href="">Languages</a>
+                <div class="relative group">
+                    <a href="#" class="border-b-2 border-transparent hover:text-fourth transition duration-200">Languages</a>
+                    <!-- Dropdown Menu -->
+                    <div class="absolute z-10 bg-white left-0 mt-2 w-48 shadow-md rounded-md opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300">
+                        <a href="#" class="block px-4 py-2 hover:bg-gray-100">Spanish</a>
+                        <a href="#" class="block px-4 py-2 hover:bg-gray-100">French</a>
+                        <a href="#" class="block px-4 py-2 hover:bg-gray-100">German</a>
+                        <a href="#" class="block px-4 py-2 hover:bg-gray-100">Japanese</a>
+                    </div>
+                </div>
                 <a class="hover:text-fourth" href="./pages/page2/index.html">About Us</a>
             </ul>
         </nav>
