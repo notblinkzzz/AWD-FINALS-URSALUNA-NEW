@@ -41,7 +41,7 @@
                     <a class="xl:block lg:block hidden hover:text-third transition duration-200" href="../about-us-page/index.html">About Us</a>
 
                     <!--LOGIN PAGE HREF-->
-                    <a href="./pages/login-page/index.html"><button class="bg-white xl:px-11 xl:py-2 lg:px-9 lg:py-1 md:px-6 py-1 px-4 border-2 rounded-xl border-primary shadow-[3px_3px_0px_0px_#063f5c] active:shadow-none">
+                    <a href="#"><button class="bg-white xl:px-11 xl:py-2 lg:px-9 lg:py-1 md:px-6 py-1 px-4 border-2 rounded-xl border-primary shadow-[3px_3px_0px_0px_#063f5c] active:shadow-none">
                         Start Learning
                     </button></a>
                 </ul>
@@ -74,7 +74,7 @@
 
     <main class=" xl:mt-32 lg:mt-32 md:mt-36 mt-36 w-full flex flex-col text-primary xl:px-15 xl:py-5 lg:px-12 lg:py-3 px-10 py-3 gap-6 font-semibold">
         <div class="flex w-full justify-center">
-            <p class="text-center xl:text-5xl lg:text-4xl md:text-4xl text-3xl w-11/12">Login and start learning</p>
+            <p class="text-center xl:text-5xl lg:text-4xl md:text-4xl text-3xl w-11/12">Login and Start Learning</p>
         </div>
         <div class="login-creds flex w-full">
             <div class="w-full flex flex-col xl:gap-4 lg:gap-4 md:gap-3 gap-2 justify-center items-center">
@@ -82,9 +82,17 @@
                     <label class="xl:text-2xl lg:text-xl md:text-xl pl-2" for="email">Email</label><br>
                     <input class="mt-1 bg-white w-full rounded-sm border border-primary shadow-[3px_3px_0px_0px_#063f5c] text-black pl-1  font-normal lg:p-1.5 md:p-1 lg:text-lg md:text-md" type="text" id="email" name="email"><br>
                 </form>
-                <form class="xl:w-5/12 lg:w-6/12 md:w-8/12 sm:w-7/12 w-11/12" action="">
-                    <label class="xl:text-2xl lg:text-xl md:text-xl pl-2" for="password">Password</label><br>
-                    <input class="mt-1 bg-white w-full rounded-sm border border-primary shadow-[3px_3px_0px_0px_#063f5c] text-black pl-1 font-normal lg:p-1.5 md:p-1 lg:text-lg md:text-md" type="text" id="password" name="password"><br>
+                <form class="xl:w-5/12 lg:w-6/12 md:w-8/12 sm:w-7/12 w-11/12 ">
+                    <div class="flex justify-between place-items-end">
+                        <label class="xl:text-2xl lg:text-xl md:text-xl pl-2" for="password">Password</label>
+                        <div class="flex h-full gap-2">
+                            <input type="checkbox" id="showPassword" onclick="togglePassword()">
+                            <label for="showPassword">Show Password</label>
+                        </div>
+                    </div>
+
+                    <input class="mt-1 bg-white w-full rounded-sm border border-primary shadow-[3px_3px_0px_0px_#063f5c] text-black pl-1 font-normal lg:p-1.5 md:p-1 lg:text-lg md:text-md" 
+                           type="password" id="password" name="password">
                 </form>
             </div>
         </div>
