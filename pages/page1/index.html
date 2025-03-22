@@ -9,74 +9,79 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <title>Template tailwind test</title>
+    <title>Langora</title>
 </head>
 
 <body class="flex flex-col h-screen">
 
-    <header class="fixed top-0 left-0 w-full bg-white z-50 shadow-md">
+    <header class="fixed top-0 left-0 w-full z-50 bg-white">
 
-        <div class="flex flex-col px-2 pb-2 border-b-2">
-            <div class="flex items-center gap-2">
-                <img class="w-[70px] h-[70px]" src="../../assets/img/logo-app-rmv.png" alt="">
-                <h1 class="font-logo text-3xl text-primary">Langora</h1>
+        <div class=" flex xl:flex-row lg:flex-row md:flex-row flex-col px-2 pb-2 border-b w-full h-full xl:items-center lg:items-center md:items-end text-primary">
+            <div class="flex xl:items-end lg:items-end md:items-end items-center gap-2 xl:w-2/6 lg:w-2/6 md:w-2/6 w-full h-full  ">
+                <img class="w-[70px] h-[70px] xl:-mb-3 lg:-mb-3 md:-mb-3" src="../../assets/img/logo-app-rmv.png" alt="">
+                <h1 class="font-logo xl:text-4xl lg:text-4xl md:text-3xl text-3xl">Langora</h1>
             </div>
-            <div class="flex container-nav w-full">
-                <div class="filler w-1/4"></div>
-                <nav class="w-3/4 flex justify-evenly">
-                    <a href="#" class="text-primary">Home</a>
-                    <a href="#" class="text-primary">Learn</a>
-                    <a href="#" class="text-primary">Practice</a>
+
+            <div class="flex container-nav h-full xl:w-4/6 lg:w-4/6 md:w-4/6 w-full">
+
+                <!--para sa space-->
+                <div class="w-1/4 xl:hidden lg:hidden block bg-red-500"></div>
+                <nav class="w-3/4 flex xl:justify-between lg:justify-between md:justify-between justify-evenly xl:w-full lg:w-full md:w-full xl:text-xl lg:text-lg md:text-lg text-md "> <!--put bg color-->
+                    <a href="#" class="border-b-2 border-primary">Home</a>
+                    <a href="#" class="">Learn</a>
+                    <a href="#" class="xl:pr-16 lg:pr-16 md:pr-16">Practice</a>
                 </nav>
             </div>
         </div>
     </header>
 
-    <main class="flex w-full pt-[102px]">
+    <main class="flex w-full xl:pt-0 lg:pt-0 md:pt-16 pt-[102px]">
 
-        <aside class="border-r flex flex-col items-center px-4 sticky top-[102px] left-0 w-[110px] h-[calc(100vh-102px)] flex-shrink-0">
+        <!-- palitan mo yung h-calc depende sa top sa sizes-->
+        <aside class="border-r flex flex-col items-center px-4 sticky xl:top-[102px] lg:top-[102px] md:top-[67px] top-[102px] left-0 w-[110px] xl:h-[calc(100vh-102px)] lg:h-[calc(100vh-102px)] md:h-[calc(100vh-67px)]  h-[calc(100vh-102px)] flex-shrink-0">
             <div class="streak-language flex items-center justify-center gap-2  w-full py-2 mt-4">
                 <div class="streak flex items-center">
-                    <img class="h-[1.7rem] w-[1.7rem]" src="./assets/img/flaming-flame-icons-download-free-png-and-vector-icons-766499.png">
+                    <img class="h-[1.6rem] w-[1.6rem]" src="./assets/img/flaming-flame-icons-download-free-png-and-vector-icons-766499.png">
                     <p>7</p>
                 </div>
                 <img class="h-[2rem] w-[2rem]" src="./assets/img/japan.png">
             </div>
-            <div class="flex flex-col items-center justify-evenly gap-4 flex-1 py-4 w-full">
+            <div class="flex flex-col items-center justify-evenly gap-4 flex-1 py-4 w-full xl:text-xl lg:text-lg md:text-md text-xs font-semibold text-third">
 
-                <a href="#" class="flex flex-col items-center gap-2">
+                <a href="" class="flex flex-col items-center gap-2">
                     <div class="w-16 h-16 flex items-center justify-center rounded-full bg-primary">
                         <i class="fa-solid fa-user text-white text-4xl"></i>
                     </div>
-                    <p class="text-xs text-third">PROFILE</p>
+                    <p class="">PROFILE</p>
                 </a>
                 <a href="#" class="flex flex-col items-center gap-2">
                     <div class="w-16 h-16 flex items-center justify-center rounded-full bg-primary">
                         <i class="fa-solid fa-scroll text-white text-4xl"></i>
                     </div>
-                    <p class="text-xs text-third">CHALLENGES</p>
+                    <p class="">CHALLENGES</p>
                 </a>
                 <a href="#" class="flex flex-col items-center gap-2">
                     <div class="w-16 h-16 flex items-center justify-center rounded-full bg-primary">
                         <i class="fa-solid fa-trophy text-white text-4xl"></i>
                     </div>
-                    <p class="text-xs text-third">LEADERBOARDS</p>
+                    <p class="">LEADERBOARDS</p>
                 </a>
                 <a href="#" class="flex flex-col items-center gap-2">
                     <div class="w-16 h-16 flex items-center justify-center rounded-full bg-primary">
                         <i class="fa-solid fa-circle-info text-white text-4xl"></i>
                     </div>
-                    <p class="text-xs text-third">ABOUT</p>
+                    <p class="">ABOUT</p>
                 </a>
             </div>
         </aside>
 
+        <!--tanggalin mo nalang height if gusto mo. pang display lang muna 200vh-->
         <section class="flex-1 p-4 w-full h-[200vh]">
-            <h1 class="text-lg text-secondary">BEGINNER </h1>
-            <h2 class="text-xl font-semibold">FRENCH - UNIT 1 | LESSON 1</h2>
+            <h1 class="xl:text-3xl lg:text-2xl md:text-xl text-lg text-secondary">BEGINNER </h1>
+            <h2 class="xl:text-4xl lg:text-3xl md:text-2xl text-xl font-semibold text-primary">FRENCH - UNIT 1 | LESSON 1</h2>
 
             <div class="progress flex flex-col rounded-xl mt-6 text-primary ">
-                <div class="flex justify-between px-3 py-4 bg-third rounded-t-xl">
+                <div class="flex justify-between px-3 py-4 bg-third rounded-t-xl xl:text-xl lg:text-lg md:text-sm text-sm">
                     <p class="font-semibold">USING BASIC PHRASES</p>
                     <div class="flex gap-2">
                         <p class="font-semibold">0 PTS</p>
@@ -85,7 +90,7 @@
                 </div>
                 <div class="w-full flex flex-col px-3 py-4 shadow-[0px_4px_6px_0px_rgba(0,_0,_0,_0.1)] rounded-b-xl">
                     <div class="flex justify-between text-third">
-                        <p class="font-semibold text-sm ">PROGRESS</p>
+                        <p class="font-semibold xl:text-xl lg:text-lg md:text-md text-sm ">PROGRESS</p>
                         <p>1/3</p>
                     </div>
 
@@ -93,36 +98,36 @@
                         <div class="h-2 w-[33%] rounded-xl bg-secondary"></div>
                     </div>
 
-                    <div class="w-full flex xl:flex-row lg:flex-row md:flex-row flex-col gap-2 mt-4 font-semibold">
+                    <div class="w-full flex xl:flex-row lg:flex-row flex-col gap-2 mt-4 font-semibold text-third">
                         <div class="flex flex-col flex-1/3 bg-fourth rounded-xl p-2">
-                            <div class="flex justify-between w-full">
-                                <p class="">Learn</p>
+                            <div class="flex justify-between w-full text-primary">
+                                <p class="xl:text-2xl lg:text-xl md:text-lg text-md ">Learn</p>
                                 <i class="fa-solid fa-check"></i>
                             </div>
-                            <div class="text-third pb-10">
-                                <p class="text-sm">&emsp;Phrases you will learn: 3</p>
-                                <p class="text-sm">&emsp;Phrases you have learned: 3</p>
+                            <div class="pb-10 xl:text-xl lg:text-lg md:text-md text-sm">
+                                <p class="">&emsp;Phrases you will learn: 3</p>
+                                <p class="">&emsp;Phrases you have learned: 3</p>
                             </div>
 
                         </div>
                         <div class="flex flex-col flex-1/3 bg-fourth rounded-xl p-2">
-                            <div class="flex justify-between w-full">
-                                <p class="">Hear</p>
-  
+                            <div class="flex justify-between w-full text-primary">
+                                <p class="xl:text-2xl lg:text-xl md:text-lg text-md">Hear</p>
+
                             </div>
-                            <div class="text-third pb-10">
-                                <p class="text-sm">&emsp;Audios to listen to: 3</p>
-                                <p class="text-sm">&emsp;Replays: 0</p>
+                            <div class="pb-10 xl:text-xl lg:text-lg md:text-md text-sm">
+                                <p class="">&emsp;Audios to listen to: 3</p>
+                                <p class="">&emsp;Replays: 0</p>
                             </div>
                         </div>
                         <div class="flex flex-col flex-1/3 bg-fourth rounded-xl p-2">
-                            <div class="flex justify-between w-full">
-                                <p class="">Use</p>
+                            <div class="flex justify-between w-full text-primary">
+                                <p class="xl:text-2xl lg:text-xl md:text-lg text-md">Use</p>
 
                             </div>
-                            <div class="text-third pb-10">
-                                <p class="text-sm">&emsp;Conversations completed: 3</p>
-                                <p class="text-sm">&emsp;Replays: 0</p>
+                            <div class="pb-10 xl:text-xl lg:text-lg md:text-md text-sm">
+                                <p class="">&emsp;Conversations completed: 0</p>
+                                <p class="">&emsp;Replays: 0</p>
                             </div>
                         </div>
                     </div>
@@ -133,7 +138,7 @@
         <div class="fixed z-50 bottom-3 right-3">
             <button><i class="fa-solid fa-gear text-2xl text-primary "></i></button>
         </div>
-        
+
     </main>
 
 
