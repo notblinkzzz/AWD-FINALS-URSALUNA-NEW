@@ -13,45 +13,8 @@ body {
 } */
 
 
-.header-div-phone-tablet{
-    display: flex;
-}
-.welcome-lang {
-    display: none;
-}
-
-.icons-size {
-    font-size: var(--text-xl);
-}
-
-.main-desk-lap {
-    display: flex;
-}
 .footer-desk-lap{
     display: flex;
-}
-
-.interactive-p {
-    border-radius: var(--radius-xl);
-    box-shadow: -5px 5px 0px 0px var(--color-primary);
-    color: var(--color-primary);
-}
-
-.gamified-p {
-    border-radius: var(--radius-xl);
-    box-shadow: 5px 5px 0px 0px var(--color-primary);
-    color: var(--color-primary);
-}
-.ai-p{
-    border-radius: var(--radius-xl);
-    box-shadow: -5px 5px 0px 0px var(--color-primary);
-    color: var(--color-primary);
-}
-
-.anytime-p {
-    border-radius: var(--radius-xl);
-    box-shadow: 5px 5px 0px 0px var(--color-primary);
-    color: var(--color-primary);
 }
 
 
@@ -62,67 +25,15 @@ body {
 }
 
 @media (min-width: 768px) { /* md */
-    .interactive-p {
-        border-radius: var(--radius-xl);
-        box-shadow: -5px 5px 0px 0px var(--color-primary);
-    }
 
-    .gamified-p {
-        border-radius: var(--radius-xl);
-        box-shadow: -5px 5px 0px 0px var(--color-primary);
-    }
-    .ai-p{
-        border-radius: var(--radius-xl);
-        box-shadow: 5px 5px 0px 0px var(--color-primary);
-    }
-
-    .anytime-p {
-        border-radius: var(--radius-xl);
-        box-shadow: 5px 5px 0px 0px var(--color-primary);
-    }
 
 }
 
 @media (min-width: 1024px) { /* lg */
-    .interactive-p {
-        border-radius: var(--radius-xl);
-        box-shadow: -5px 5px 0px 0px var(--color-primary);
-    }
 
-    .gamified-p {
-        border-radius: var(--radius-xl);
-        box-shadow: -5px 5px 0px 0px var(--color-primary);
-    }
-    .ai-p{
-        border-radius: var(--radius-xl);
-        box-shadow: 5px 5px 0px 0px var(--color-primary);
-    }
-
-    .anytime-p {
-        border-radius: var(--radius-xl);
-        box-shadow: 5px 5px 0px 0px var(--color-primary);
-    }
 }
 
 @media (min-width: 1280px) { /* xl */
 
-    .interactive-p {
-        border-radius: var(--radius-xl);
-        box-shadow: -5px 5px 0px 0px var(--color-primary);
-    }
-
-    .gamified-p {
-        border-radius: var(--radius-xl);
-        box-shadow: -5px 5px 0px 0px var(--color-primary);
-    }
-    .ai-p{
-        border-radius: var(--radius-xl);
-        box-shadow: 5px 5px 0px 0px var(--color-primary);
-    }
-
-    .anytime-p {
-        border-radius: var(--radius-xl);
-        box-shadow: 5px 5px 0px 0px var(--color-primary);
-    }
 
 }

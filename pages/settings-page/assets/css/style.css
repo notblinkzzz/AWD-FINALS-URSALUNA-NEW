@@ -1,12 +1,7 @@
 @import url(../../src/output.css);
 @import url(../../src/input.css);
 
-html,
-body {
-    overflow-x: hidden;
-    max-width: 100vw;
 
-}
 
 /*  {
     outline: 1px solid green
@@ -14,14 +9,9 @@ body {
 
 
 
-
-.icons-size {
-    font-size: var(--text-xl);
-}
-
-.footer-desk-lap{
+/* .footer-desk-lap{
     display: flex;
-}
+} */
 
 
 @media (min-width: 640px) { /* sm pero di need */
@@ -38,5 +28,6 @@ body {
 }
 
 @media (min-width: 1280px) { /* xl */
+
 
 }
