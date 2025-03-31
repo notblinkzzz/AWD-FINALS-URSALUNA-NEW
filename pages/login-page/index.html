@@ -41,7 +41,7 @@
                     <a class="xl:block lg:block hidden hover:text-third transition duration-200" href="../about-us-page/index.html">About Us</a>
 
                     <!--LOGIN PAGE HREF-->
-                    <a href="#"><button class="bg-white xl:px-11 xl:py-2 lg:px-9 lg:py-1 md:px-6 py-1 px-4 border-2 rounded-xl border-primary shadow-[3px_3px_0px_0px_#063f5c] active:shadow-none">
+                    <a href="#"><button class="bg-white xl:px-11 xl:py-2 lg:px-9 lg:py-1 md:px-6 py-1 px-4 border-2 rounded-xl border-primary shadow-[3px_3px_0px_0px_#063f5c] active:shadow-none active:translate-x-[3px] active:translate-y-[3px] transition-all duration-100">
                         Start Learning
                     </button></a>
                 </ul>
@@ -78,12 +78,12 @@
         </div>
         <div class="login-creds flex w-full">
             <div class="w-full flex flex-col xl:gap-4 lg:gap-4 md:gap-3 gap-2 justify-center items-center">
-                <form class="xl:w-5/12 lg:w-6/12 md:w-8/12 sm:w-7/12 w-11/12" action="">
+                <form class="xl:w-5/12 lg:w-6/12 md:w-8/12 sm:w-7/12 w-11/12" id="loginForm" onsubmit="return validateForm(event)">
                     <label class="xl:text-2xl lg:text-xl md:text-xl pl-2" for="email">Email</label><br>
-                    <input class="mt-1 bg-white w-full rounded-sm border border-primary shadow-[3px_3px_0px_0px_#063f5c] text-black pl-1  font-normal lg:p-1.5 md:p-1 lg:text-lg md:text-md" type="text" id="email" name="email"><br>
-                </form>
-                <form class="xl:w-5/12 lg:w-6/12 md:w-8/12 sm:w-7/12 w-11/12">
-                    <div class="flex justify-between place-items-end">
+                    <input class="mt-1 bg-white w-full rounded-sm border border-primary shadow-[3px_3px_0px_0px_#063f5c] text-black pl-1  font-normal lg:p-1.5 md:p-1 lg:text-lg md:text-md" 
+                           type="email" id="email" name="email" required><br>
+                    
+                    <div class="flex justify-between place-items-end mt-4">
                         <label class="xl:text-2xl lg:text-xl md:text-xl pl-2" for="password">Password</label>
                         <div class="flex h-full gap-2 items-center">
                             <input type="checkbox" id="showPassword" onclick="togglePassword()">
@@ -92,19 +92,22 @@
                     </div>
 
                     <input class="mt-1 bg-white w-full rounded-sm border border-primary shadow-[3px_3px_0px_0px_#063f5c] text-black pl-1 font-normal lg:p-1.5 md:p-1 lg:text-lg md:text-md"
-                           type="password" id="password" name="password">
+                           type="password" id="password" name="password" required>
+                    
+                    <div class="flex w-full justify-center mt-6">
+                        <button type="submit" class="bg-fourth justify-center xl:px-40 lg:px-36 lg:py-3 md:px-28 md:py-3 px-20 py-2 rounded-full border border-primary shadow-[3px_3px_0px_0px_#063f5c] hover:bg-primary hover:text-fourth hover:shadow-[3px_3px_0px_0px_#9fe7f5] transition-all duration-300">
+                            <span class="xl:text-2xl lg:text-xl md:text-xl text-xl">Login</span>
+                        </button>
+                    </div>
                 </form>
             </div>
-        </div>
-        <div class="flex w-full justify-center mt-3">
-            <a class=" bg-fourth justify-center xl:px-40 lg:px-36 lg:py-3 md:px-28 md:py-3 px-20 py-2 rounded-full border border-primary shadow-[3px_3px_0px_0px_#063f5c] " href="../home-page/index.html"><button class="xl:text-2xl lg:text-xl md:text-xl text-xl">Login</button></a>
         </div>
         <div class="flex justify-center gap-5 text-center text-sm">
             <a href=""><p>Forgot Email?</p></a>
             <a href=""><p>Forgot Password?</p></a>
         </div>
         <div class="flex w-full justify-center">
-            <a class=" bg-primary justify-center xl:px-36 lg:px-28 lg:py-3 md:px-20 md:py-3 px-14 py-2 rounded-full border border-fourth shadow-[3px_3px_0px_0px_#9fe7f5] text-white" href="../sign-up-page/index.html"><button class="xl:text-xl lg:text-lg md:text-lg text-md">Sign Up</button></a>
+            <a class=" bg-primary justify-center xl:px-36 lg:px-28 lg:py-3 md:px-20 md:py-3 px-14 py-2 rounded-full border border-fourth shadow-[3px_3px_0px_0px_#9fe7f5] text-white hover:bg-fourth hover:text-primary hover:shadow-[3px_3px_0px_0px_#063f5c] transition-all duration-300" href="../sign-up-page/index.html"><button class="xl:text-xl lg:text-lg md:text-lg text-md">Sign Up</button></a>
         </div>
     </main>
 
@@ -146,22 +149,22 @@
         <div class="xl:w-[60%] lg:w-[60%] md:w-[60%] w-full xl:mt-0 lg:mt-0 md:mt-0 mt-10 flex justify-evenly gap-6 pt-3 ">
             <div class=" xl:text-lg lg:text-base md:text-sm text-primary flex flex-col gap-2">
                 <h2 class="font-semibold">Terms & Policies</h2>
-                <a href=""><p class="xl:text-base text-sm">Privacy</p></a>
-                <a href=""><p class="xl:text-base text-sm">Terms & Condition</p></a>
+                <a href=""><p class="xl:text-base text-sm hover:text-third hover:scale-105 transition-all duration-200">Privacy</p></a>
+                <a href=""><p class="xl:text-base text-sm hover:text-third hover:scale-105 transition-all duration-200">Terms & Condition</p></a>
             </div>
 
             <div class=" xl:text-lg lg:text-base md:text-sm text-primary flex flex-col gap-2">
                 <h2 class="font-semibold">Learn With Us</h2>
-                <a href=""><p class="xl:text-base text-sm">Languages Offered</p></a>
-                <a href=""><p class="xl:text-base text-sm">Community Forum</p></a>
-                <a href=""><p class="xl:text-base text-sm">Mobile App</p></a>
+                <a href=""><p class="xl:text-base text-sm hover:text-third hover:scale-105 transition-all duration-200">Languages Offered</p></a>
+                <a href=""><p class="xl:text-base text-sm hover:text-third hover:scale-105 transition-all duration-200">Community Forum</p></a>
+                <a href=""><p class="xl:text-base text-sm hover:text-third hover:scale-105 transition-all duration-200">Mobile App</p></a>
             </div>
 
             <div class=" xl:text-lg lg:text-base md:text-sm text-primary flex flex-col gap-2">
                 <h2 class="font-semibold">Support</h2>
-                <a href=""><p class="xl:text-base text-sm">Help Center</p></a>
-                <a href=""><p class="xl:text-base text-sm">Refund Policy</p></a>
-                <a href=""><p class="xl:text-base text-sm">FAQs</p></a>
+                <a href=""><p class="xl:text-base text-sm hover:text-third hover:scale-105 transition-all duration-200">Help Center</p></a>
+                <a href=""><p class="xl:text-base text-sm hover:text-third hover:scale-105 transition-all duration-200">Refund Policy</p></a>
+                <a href=""><p class="xl:text-base text-sm hover:text-third hover:scale-105 transition-all duration-200">FAQs</p></a>
             </div>
         </div>
 

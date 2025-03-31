@@ -10,7 +10,6 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 
-    // Close dropdown if clicked outside
     document.addEventListener("click", function (event) {
         languageButtons.forEach(button => {
             const dropdownMenu = button.nextElementSibling;
@@ -24,4 +23,31 @@ document.addEventListener("DOMContentLoaded", function () {
 function togglePassword() {
     var passwordField = document.getElementById("password");
     passwordField.type = passwordField.type === "password" ? "text" : "password";
+}
+
+function validateSignupForm(event) {
+    event.preventDefault();
+    
+    const email = document.getElementById("email").value;
+    const name = document.getElementById("name").value;
+    const password = document.getElementById("password").value;
+    
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(email)) {
+        alert("Please enter a valid email address");
+        return false;
+    }
+    
+    if (name.length < 2) {
+        alert("Name must be at least 2 characters long");
+        return false;
+    }
+    
+    if (password.length < 6) {
+        alert("Password must be at least 6 characters long");
+        return false;
+    }
+    
+    window.location.href = "../login-page/index.html?signup=success";
+    return false;
 }
